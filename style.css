@@ -1,0 +1,189 @@
+/*
+Theme Name: Stocky Child Theme
+Theme URI: http://themes.designcrumbs.com/stocky
+Description: Child theme for Stocky.
+Author: Jake Caputo
+Author URI: http://themes.designcrumbs.com
+Template: stocky
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("../stocky/style.css");
+
+/* Start your custom css below here! */
+#menu_wrap {
+
+	background-color: #ffffff;
+
+}
+#logo_wrap {
+	position: absolute;
+	right: 0;
+	left: 0;
+	width: 286px;
+	margin: auto;
+}
+.right-menu {
+	float: right;
+}
+.right-menu ul.main-menu{
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+.right-menu ul.main-menu li{
+	display: inline-block;
+}
+.right-menu ul.main-menu li a {
+	padding: 0 13px;
+	color: #000000 !important;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+/* .right-menu ul.main-menu:after {
+	content: "\f141";
+    font-family: 'FontAwesome';
+    display: inline-block;
+    clear: both;
+    padding-left: 30px;
+    font-size: 38px;
+    color: #000000;
+    position: relative;
+    top: 9px;
+	cursor: pointer;
+} */
+.drop-menu {
+	float: right;
+	position: relative;
+	right: -30px;
+	top: 9px;
+	
+}
+.right-menu .drop-menu ul {
+	background:  #000000;
+	width: 200px;
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 9999;
+}
+.right-menu .drop-menu ul::before {
+	content: "";
+	height: 0;
+	width: 0;
+	border-right: 17px solid transparent;
+	border-left: 17px solid transparent;
+	border-bottom: 19px solid #000000;
+	position: absolute;
+	top: -19px;
+	right: 29px;
+}
+.toggle-bars i{
+	padding-left: 30px;
+    font-size: 38px;
+    color: #000000;
+    position: relative;
+    top: 9px;
+	cursor: pointer;
+}
+.fa-ellipsis-h:before {
+	content: "\f141";
+	font-family: 'FontAwesome';
+}
+.right-menu .drop-menu ul li{
+	line-height: normal;
+}
+.right-menu .drop-menu ul li a {
+	padding: 7px 13px;
+	display: block;
+}
+.right-menu .drop-menu ul li a:hover{
+	background: #FFFFFF;
+	color: #000000 !important;
+}
+
+#header_inner h2, #header_inner h1.sitename_logo a {
+	text-transform: uppercase;
+}
+#home_cta {
+	padding: 0;
+}
+.blur-bg{
+	background: rgba(255,255,255, .8);
+	height: 100%;
+	width: 100%;
+	padding: 100px 0;
+}
+.home_cta_dark{
+	background: #1b1c1e;
+	color: #FFFFFF;
+	background-size: cover;
+	position: relative;
+	padding: 100px 0;
+	background-position: center center;
+	text-align: center;
+	font-size: 18px;
+}
+
+.fooer-logo a{
+	border-bottom: none !important;
+}
+
+
+
+
+
+.about-banner h2 {
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	font-weight: normal;
+	margin: 10px;
+}
+.about-menu {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center;
+}
+.about-menu li {
+  list-style: none !important;
+  display: inline;
+  text-align: center;
+  border-radius: ;
+  border-right: 2px solid #000000;
+}
+.about-menu li:last-child{
+	 border-right: none;
+}
+.about-menu li a {
+  padding: 15px 29px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 25px;
+
+}
+p {
+	color: #000;
+	font-size: 20px;
+}
+
+.about-bottom h2{
+	color: #000000;
+	font-size: 20px;
+}
+.about-list li {
+	display: ;
+	list-style: none !important;
+	color: #000;
+	font-size: 22px;
+}
+.entry-content ul li::before {
+	content: "\f0a4";
+	font-family: 'FontAwesome';
+	margin-right: 10px;
+	font-size: 22px;
+	color: #000;
+}
