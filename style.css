@@ -180,7 +180,7 @@ p {
 	color: #000;
 	font-size: 22px;
 }
-.entry-content ul li::before {
+ul.about-list li:before {
 	content: "\f0a4";
 	font-family: 'FontAwesome';
 	margin-right: 10px;
