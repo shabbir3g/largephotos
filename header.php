@@ -42,7 +42,7 @@
 						<a href="#" id="search_toggle"></a> -->
 						
 						
-						<div class="right-menu">
+						<div class="right-menu clearfix">
 							
 							<?php wp_nav_menu([
 								'theme_location'	=> 'primary',
@@ -64,15 +64,6 @@
 									'theme_location'	=> 'toogle-menu',
 									'container'			=> '',
 								]); ?>
-							<!--<ul>
-									<li><a href="#">Login</a></li>
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Leaderboard</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Faq</a></li>
-									<li><a href="#">Contact us</a></li>
-									<li><a href="#">Newsletter</a></li>
-								</ul> -->
 							</div>
 						</div>
 						
@@ -109,7 +100,7 @@
 							</ul>
 						</div> -->
 
-						<div id="search_wrap">
+						<div id="search_wrap" class="clearfix">
 							<?php get_template_part("searchform","downloads"); ?>
 						</div>
 
@@ -187,8 +178,10 @@
 
 				</div>
 			</header>
+			
+			
 
 			<?php } /* end if is page-login.php */ ?>
 
 			<section class="wrapper" id="content"><?php // #content ends in footer.php ?>
-				<div class=" clearfix"><?php // .container ends in footer.php ?>
+				<div class="container clearfix"><?php // .container ends in footer.php ?>

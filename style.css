@@ -6,10 +6,14 @@ Author: Jake Caputo
 Author URI: http://themes.designcrumbs.com
 Template: stocky
 */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url("../stocky/style.css");
 
 /* Start your custom css below here! */
+
+
+
 #menu_wrap {
 
 	background-color: #ffffff;
@@ -38,36 +42,34 @@ Template: stocky
 	color: #000000 !important;
 	cursor: pointer;
 	text-transform: uppercase;
+	opacity: .5;
 }
-/* .right-menu ul.main-menu:after {
-	content: "\f141";
-    font-family: 'FontAwesome';
-    display: inline-block;
-    clear: both;
-    padding-left: 30px;
-    font-size: 38px;
-    color: #000000;
-    position: relative;
-    top: 9px;
-	cursor: pointer;
-} */
+
+.right-menu ul.main-menu li a:hover{
+	opacity: 1;
+}
+/* .right-menu ul.main-menu:after { */
+	/* content: "\f141"; */
+    /* font-family: 'FontAwesome'; */
+    /* display: inline-block; */
+    /* clear: both; */
+    /* padding-left: 30px; */
+    /* font-size: 38px; */
+    /* color: #000000; */
+    /* position: relative; */
+    /* top: 9px; */
+	/* cursor: pointer; */
+/* } */
 .drop-menu {
 	float: right;
 	position: relative;
 	right: -30px;
 	top: 9px;
-	
-}
-.right-menu .drop-menu ul {
-	background:  #000000;
-	width: 200px;
 	display: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 9999;
+	transition: .5s;
 }
-.right-menu .drop-menu ul::before {
+
+.right-menu .drop-menu ul:before {
 	content: "";
 	height: 0;
 	width: 0;
@@ -77,6 +79,16 @@ Template: stocky
 	position: absolute;
 	top: -19px;
 	right: 29px;
+	display: block;
+}
+.right-menu .drop-menu ul {
+	background:  #000000;
+	width: 200px;
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 9999;
 }
 .toggle-bars i{
 	padding-left: 30px;
@@ -88,7 +100,7 @@ Template: stocky
 }
 .fa-ellipsis-h:before {
 	content: "\f141";
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Free';
 }
 .right-menu .drop-menu ul li{
 	line-height: normal;
@@ -130,9 +142,10 @@ Template: stocky
 }
 
 
-
-
-
+.elementor-273 .elementor-element.elementor-element-3972edc {
+	background-size: 100% 100%;
+	
+}
 .about-banner h2 {
 	color: #fff;
 	text-align: center;
@@ -142,28 +155,33 @@ Template: stocky
 	font-weight: normal;
 	margin: 10px;
 }
-.about-menu {
+#menu-about-me {
   margin: 0 !important;
   padding: 0 !important;
   text-align: center;
 }
-.about-menu li {
+#menu-about-me li {
   list-style: none !important;
   display: inline;
   text-align: center;
   border-radius: ;
-  border-right: 2px solid #000000;
+  border-right: 2px solid #999999;
 }
-.about-menu li:last-child{
+#menu-about-me li:last-child{
 	 border-right: none;
 }
-.about-menu li a {
+#menu-about-me li a {
   padding: 15px 29px;
   display: inline-block;
   text-transform: uppercase;
   color: #000000;
   font-size: 25px;
+  transition: .5s;
+  opacity: .5;
 
+}
+#menu-about-me li a:hover {
+	opacity: 1;
 }
 p {
 	color: #000;
@@ -186,4 +204,299 @@ ul.about-list li:before {
 	margin-right: 10px;
 	font-size: 22px;
 	color: #000;
+}
+
+
+.license-bottom h2{
+	color: #000000;
+	font-size: 20px;
+}
+.license-list li {
+	display: ;
+	list-style: none !important;
+	color: #000;
+	font-size: 22px;
+}
+ul.license-list li:before {
+	content: "\f14a";
+	font-family: 'FontAwesome';
+	margin-right: 10px;
+	font-size: 22px;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+.searchform .search_input {
+	width: 92% !important;
+	text-transform: uppercase;
+}
+.searchform .search_input {
+	margin: auto;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	background-color: #FFFFFF;
+	border: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, .9);
+	-moz-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, .9);
+	box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, .9);
+}
+.searchform .submitform {
+	display: inline;
+	position: absolute;
+	right: 0px;
+	top: -5px;
+	background: #000000 !important;
+	color: #FFFFFF !important;
+	border-color: #000000 !important;
+	padding: 8px 14px;
+	display: block;
+}
+
+
+.search-bbbar::before {
+	background: url('images/search-bar.png');
+	background-size: 100% 100%;
+	display: block;
+	width: 36px;
+	content: '';
+	height: 22px;
+	background-repeat: no-repeat;
+	
+}
+
+
+.search-options:before {
+	content: "";
+	height: 0;
+	width: 0;
+	border-right: 17px solid transparent;
+	border-left: 17px solid transparent;
+	border-bottom: 19px solid #FFFFFF;
+	position: absolute;
+	top: -19px;
+	right: 29px;
+	display: block;
+}
+.searchform a {
+	border-left: 4px solid #000000;
+	display: inline-block;
+	padding: 11px;
+	position: absolute;
+	top: 0px;
+	right: 95px;
+}
+.search-options label {
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #000000;
+	letter-spacing: 1px;
+	font-size: 15px;
+	text-align: left;
+}
+
+
+
+
+.dimenstion{
+	overflow: hidden;
+}
+.search-options select:focus{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #000000;
+}
+.dimenstion input{
+	width: 45%;
+	float: left;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #000000;
+}
+.search-options select{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #000000;
+}
+
+
+
+
+
+.search-color {
+	margin-top: 18px;
+}
+.search-color input[type="radio"] {
+  display: none;
+}
+.search-color input[type="radio"]:checked + label span {
+  transform: scale(1.25);
+}
+.search-color input[type="radio"]:checked + label .red {
+  border: 2px solid #711313;
+}
+.search-color input[type="radio"]:checked + label .orange {
+  border: 2px solid #873a08;
+}
+.search-color input[type="radio"]:checked + label .yellow {
+  border: 2px solid #816102;
+}
+.search-color input[type="radio"]:checked + label .olive {
+  border: 2px solid #505a0b;
+}
+.search-color input[type="radio"]:checked + label .green {
+  border: 2px solid #0e4e1d;
+}
+.search-color input[type="radio"]:checked + label .teal {
+  border: 2px solid #003633;
+}
+.search-color input[type="radio"]:checked + label .blue {
+  border: 2px solid #103f62;
+}
+.search-color input[type="radio"]:checked + label .violet {
+  border: 2px solid #321a64;
+}
+.search-color input[type="radio"]:checked + label .purple {
+  border: 2px solid #501962;
+}
+.search-color input[type="radio"]:checked + label .pink {
+  border: 2px solid #851554;
+}
+
+.search-color label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.search-color label:hover span {
+  transform: scale(1.25);
+}
+.search-color label span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform .2s ease-in-out;
+}
+.search-color label span.red {
+  background: #DB2828;
+}
+.search-color label span.orange {
+  background: #F2711C;
+}
+.search-color label span.yellow {
+  background: #FBBD08;
+}
+.search-color label span.olive {
+  background: #B5CC18;
+}
+.search-color label span.green {
+  background: #21BA45;
+}
+.search-color label span.teal {
+  background: #00B5AD;
+}
+.search-color label span.blue {
+  background: #2185D0;
+}
+.search-color label span.violet {
+  background: #6435C9;
+}
+.search-color label span.purple {
+  background: #A333C8;
+}
+.search-color label span.pink {
+  background: #E03997;
+}
+
+
+.search-color label span.pink1 {
+  background: #ff6c00;
+}
+
+.search-color label span.pink2 {
+  background: #000000;
+}
+
+.search-color label span.pink3 {
+  background: #56fff5;
+}
+
+.search-color label span.pink4 {
+  background: #ff60e3;
+}
+
+.search-color label span.pink5 {
+  background: #42ff00;
+}
+
+.search-color label span.pink6 {
+  background: #622626;
+}
+
+
+#footer {
+	padding-top: 103px;
+}
+
+#menu-license {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center;
+}
+#menu-license li {
+  list-style: none !important;
+  display: inline;
+  text-align: center;
+  border-radius: ;
+  border-right: 2px solid #999999;
+}
+#menu-license li:last-child{
+	 border-right: none;
+}
+#menu-license li a {
+  padding: 15px 29px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 25px;
+  transition: .5s;
+  opacity: .5;
+
+}
+#menu-license li a:hover {
+	opacity: 1;
+}
+
+.search-options {
+	width: 320px;
+	background: #ffffff;
+	position: absolute;
+	top: 67px;
+	right: 78px;
+	padding: 13px 18px;
+	text-align: left;
+	display: none;
+}
+
+#search_wrap {
+	display: none;
+	width: 100%;
+	margin: 0;
+	float: left;
 }
