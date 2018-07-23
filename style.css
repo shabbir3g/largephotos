@@ -498,6 +498,34 @@ ul.license-list li:before {
 	width: 26.785714285714285%;
 	float: right;
 }
+#product_pricing a {
+	background: #fff;
+	padding: 14px;
+	border: 3px solid #428bca;
+	color: #428bca;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+}
+#product_pricing a:hover{
+	background: #428bca;
+	color: #ffffff;
+	border: 3px solid #428bca;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .search-options {
 	width: 320px;
